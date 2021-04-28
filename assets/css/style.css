@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+
+/* Farbe: #fff / #000 */
+
+/* Hinweise:
+Suche nach -webkit-text-stroke und -webkit-text-stroke-color */
+
+/* font-family: 'Work Sans', sans-serif; */
+
+@font-face {
+    font-family: LarishNeue;
+    src: url(../fonts/LarishNeueSemibold.woff);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background:#000;
+    color: #fff;
+    text-align: center;
+    font-family: LarishNeue;
+}
+#line {
+    width: 2%;
+    height: 15vh;
+}
+header h5 , p {
+    font-size: 0.7rem;
+    font-family: 'Work Sans', sans-serif;
+}
+header h1 {
+    font-size: 4rem;
+    margin: -10px;
+    padding: 0;
+}
+header span {
+    display: block;
+    margin: -27px auto -10px;
+    font-family: LarishNeue;
+    color: #000;
+    text-shadow: 1px  1px 1px #fff,
+    1px -1px 1px #fff,
+   -1px  1px 1px #fff,
+   -1px -1px 1px #fff;
+}
+#bear {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 9%;
+}
+#bear a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+#bear a:hover {
+    box-shadow: 5px 5px #fff;
+}
+#lastYear , #statistic {
+    background: #000;
+    color: #fff;
+}
+#lastYear p {
+    font-size: 3.9rem;
+    margin: 0;
+    padding-top: 15%;
+    padding-left: 7%;
+    font-family: LarishNeue;
+    width: 80%;
+}
+#statistic {
+    background: url(../img/map.svg) right / cover no-repeat , #000;
+    background-size: 40%;
+    height: 55vh;
+    padding-left: 7%;
+    padding-top: 10%;
+}
+#statistic h5 {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+#statistic h1 {
+    font-family: LarishNeue;
+    font-size: 4rem;
+    padding: 0;
+    margin: 1% auto;
+}
+#stuck {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    ". . . . pic1 pic1"
+    "pic2 pic2 . . . ."
+    ". . stuck stuck . ."
+    ". . . . pic3 pic3"
+    ". pic4 pic4 . . ."
+    ". . . pic5 pic5 ."
+    "pic6 pic6 art2 art2 . ."
+    ". . . pic7 pic7 ."
+    ;
+}
+
+#stuck img {
+    width: 60%;
+    position: relative;
+}
+#pic1 {
+    grid-area: pic1;
+    top: -40px;
+    left: 50px;
+}
+#pic2 {
+    grid-area: pic2;
+    left: 40px;
+}
+#stuckArticle {
+    grid-area: stuck;
+    width: 70%;
+    
+}
+#stuckArticle h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 600;
+}
+#stuckArticle p {
+    line-height: 1.4rem;
+}
+#pic3 {
+    grid-area: pic3;
+}
+#pic4 {
+    grid-area: pic4;
+}
+#pic5 {
+    grid-area: pic5;
+}
+#pic6 {
+    grid-area: pic6;
+}
+.art2 {
+    grid-area: art2;
+    width: 60%;
+    line-height: 1.4rem;
+}
+#pic7 {
+    grid-area: pic7;
+    bottom: -40px;
+}
+#goldenBear {
+    background: #000;
+    color: #fff;
+    display: flex;
+    padding: 10% 0 10% 7%;
+}
+#goldenBear h5 {
+    margin: 0;
+}
+#kevin p:nth-of-type(1) {
+    font-size: 1.3rem;
+    font-family: LarishNeue;
+    width: 50%;
+    padding-left: 20%;
+}
+.kevin {
+    font-size: 0.7rem;
+    padding-left: 20%;
+    padding-bottom: 0;
+}
+#artBear h1 {
+    font-size: 4rem;
+    margin: 3% 0 0 0;
+    line-height: 3.4rem;
+}
+#picBear {
+    width: 100%;
+    display: flex;
+    
+}
+#picBear img:nth-of-type(1) {
+    width: 70%;
+    position: relative;
+    left: -200px;
+    top: 200px;
+}
+#picBear img:nth-of-type(2) {
+    width: 35%;
+    height: 35%;
+    position: relative;
+    left: -250px;
+    top: 330px;
+}
+#poppyBear img {
+    width: 25%;
+    padding-left: 83%;
+}
+#poppyBear2 {
+    display: flex;
+}
+#num2 {
+    padding-left: 7%;
+    width: 25%;
+}
+#num2 h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    margin: 0 0 2% 0;
+}
+#num2 h1 {
+    font-family: LarishNeue;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 3.7rem;
+}
+#design {
+    width: 50%;
+    padding-left: 10%;
+}
+#design p:nth-of-type(1) {
+    font-size: 1.5rem;
+    font-family: LarishNeue;
+}
+#roseBear {
+    display: inline-block;
+    margin-top: 15%;
+    margin-bottom: 7%;
+}
+#roseBear img:nth-of-type(1) {
+    width: 30%;
+    height: 25%;
+    position: relative;
+    right: -60px;
+    top: -100px;
+}
+#roseBear img:nth-of-type(2) {
+    width: 60%;
+}
+#poppyBear {
+    padding-top: 20%;
+}
+#circle {
+    width: 0;
+    height: 0;
+    margin-left: 80%;
+    position: relative;
+    top: -80px;
+}
+#circle img {
+    animation: rotation 6s infinite linear;
+    width: 300px;
+    height: 300px;
+    margin-left: 90%;
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(360deg);}
+}
+footer {
+    background: #000;
+    color: #fff;
+}
+#join {
+    padding-left: 7%;
+    padding-top: 5%;
+    width: 50%;
+}
+#join h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+#join p {
+    font-family: LarishNeue;
+    font-size: 2rem;
+}
+#join a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+#join a:hover {
+    box-shadow: 5px 5px #fff;
+}
+#lastIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 7%;
+    padding-bottom: 2%;
+}
+#lastIcons img {
+    width: 10%;
+}
+#animationSide {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    color: #000;
+    font-size: 3.7rem;
+    font-family: LarishNeue;
+    transform: rotate(45deg) translate(480px , -170px);
+    animation: slide 5s infinite;
+}
+@keyframes slide {
+    from {
+
+    }
+    to {
+
+    }
+}
+#animationSide span {
+    color: #fff;
+    text-shadow: 1px  1px 1px #000,
+    1px -1px 1px #000,
+   -1px  1px 1px #000,
+   -1px -1px 1px #000;
+}
+
+
+
+/* @media screen (min-width: 768) {
+    
+}
+
+@media screen (min-width: 320) {
+  
+} */
