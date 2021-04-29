@@ -3,9 +3,6 @@
 
 /* Farbe: #fff / #000 */
 
-/* Hinweise:
-Suche nach -webkit-text-stroke und -webkit-text-stroke-color */
-
 /* font-family: 'Work Sans', sans-serif; */
 
 @font-face {
@@ -15,16 +12,18 @@ Suche nach -webkit-text-stroke und -webkit-text-stroke-color */
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 header {
     background:#000;
     color: #fff;
     text-align: center;
     font-family: LarishNeue;
+    height: 60vh;
 }
 #line {
     width: 2%;
-    height: 15vh;
+    height: 20vh;
 }
 header h5 , p {
     font-size: 0.7rem;
@@ -67,7 +66,7 @@ header span {
     color: #fff;
 }
 #lastYear p {
-    font-size: 3.9rem;
+    font-size: 6rem;
     margin: 0;
     padding-top: 15%;
     padding-left: 7%;
@@ -188,14 +187,15 @@ header span {
     width: 70%;
     position: relative;
     left: -200px;
-    top: 200px;
+    top: 300px;
 }
 #picBear img:nth-of-type(2) {
     width: 35%;
     height: 35%;
     position: relative;
     left: -250px;
-    top: 330px;
+    top: 455px;
+    /* overflow: hidden; */
 }
 #poppyBear img {
     width: 25%;
@@ -237,25 +237,26 @@ header span {
     height: 25%;
     position: relative;
     right: -60px;
-    top: -100px;
+    top: -150px;
 }
 #roseBear img:nth-of-type(2) {
     width: 60%;
 }
 #poppyBear {
     padding-top: 20%;
+    overflow-x: hidden;
 }
 #circle {
     width: 0;
     height: 0;
     margin-left: 80%;
     position: relative;
-    top: -80px;
+    top: -390px;
 }
 #circle img {
     animation: rotation 6s infinite linear;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin-left: 90%;
 }
 @keyframes rotation {
@@ -265,11 +266,14 @@ header span {
 footer {
     background: #000;
     color: #fff;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 #join {
     padding-left: 7%;
     padding-top: 5%;
-    width: 50%;
+    width: 47%;
 }
 #join h5 {
     font-family: 'Work Sans', sans-serif;
@@ -277,7 +281,7 @@ footer {
 }
 #join p {
     font-family: LarishNeue;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 #join a {
     text-decoration: none;
@@ -300,32 +304,44 @@ footer {
 #lastIcons img {
     width: 10%;
 }
-#animationSide {
-    display: inline-block;
+#animationOutside {
+    margin: 0;
+    background-color: white;
     position: absolute;
-    z-index: 1;
-    background: #fff;
-    color: #000;
-    font-size: 3.7rem;
-    font-family: LarishNeue;
-    transform: rotate(45deg) translate(480px , -170px);
-    animation: slide 5s infinite;
+    transform: rotate(45deg);
+    right: -155px;
+    margin-top: 15%;
+    overflow: hidden;
+    width: 62%;
+}
+
+#animationSide {
+    white-space: nowrap;
+    color:black;
+    font-size: 5em;
+    animation: slide 9s linear infinite; 
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
 }
 @keyframes slide {
-    from {
-
+    from
+        {
+            transform: translate3d(100%, 0%, 0px);
+        }
+        to
+        {
+            transform: translate3d(-100%, 0%, 50px);
+        }
     }
-    to {
-
-    }
-}
 #animationSide span {
     color: #fff;
     text-shadow: 1px  1px 1px #000,
     1px -1px 1px #000,
-   -1px  1px 1px #000,
-   -1px -1px 1px #000;
-}
+    -1px  1px 1px #000,   
+    -1px -1px 1px #000;
+    }
 
 
 
